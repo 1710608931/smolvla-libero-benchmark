@@ -1,0 +1,23 @@
+torch
+
+accelerate
+bitsandbytes
+libero
+robosuite
+opencv-python
+Pillow
+numpy
+tqdm
+matplotlib
+
+cat /etc/resolv.conf
+env | grep -i proxy
+172.24.64.1
+env | grep proxy
+curl https://huggingface.co
+export http_proxy=http://172.24.192.1:7890
+export https_proxy=http://172.24.192.1:7890
+export PYTHONPATH=~/smallVLA/benchmark/LIBERO
+
+unset http_proxy
+unset https_proxy
