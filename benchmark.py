@@ -14,7 +14,7 @@ from huggingface_hub import snapshot_download
 # ----------------- 初始化 SmolVLA -----------------
 os.environ["HF_HUB_URL"] = "https://hf-mirror.com"
 # 指定缓存目录（可选）
-cache_dir = "/home/wushi/smallVLA/huggingface_cache"
+cache_dir = "/home/wushi/smolvla/huggingface_cache"
 
 # 下载模型到本地
 local_model_path = snapshot_download(
@@ -161,7 +161,7 @@ for task_id in range(len(task_suite.tasks)):
     task = task_suite.get_task(task_id)
     instruction = task.language
 
-    base_path = os.path.expanduser("~/smallVLA/benchmark/LIBERO/libero/libero/bddl_files")
+    base_path = os.path.expanduser("~/smolvla/benchmark/LIBERO/libero/libero/bddl_files")
     bddl_file = os.path.join(base_path, task.problem_folder, task.bddl_file)
 
     env = OffScreenRenderEnv(
